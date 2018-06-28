@@ -88,7 +88,7 @@ Y <- Y + 0*cbind(rep(0, N), rnorm(N))
 PairedIndices <- sample(1:N, N_paired)
 ## Test (or validation) data
 UnpairedIndices <- setdiff(1:N,PairedIndices)
-ncca_res <- ncca(X[PairedIndices,],Y[PairedIndices,], X[UnpairedIndices,],Y[UnpairedIndices,],
+ncca_res <- ncca.rsvd(X[PairedIndices,],Y[PairedIndices,], X[UnpairedIndices,],Y[UnpairedIndices,],
                  d = 2, hx = 0.75, hy = 0.75, nx = NumNNs_X, ny=NumNNs_Y)
 cat("The nonparametric canonical correlation between X and Y is ", ncca_res$cor_XY, "\\n")
 
