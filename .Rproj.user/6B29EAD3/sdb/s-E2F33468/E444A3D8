@@ -1,0 +1,21 @@
+{
+    "collab_server" : "",
+    "contents" : "library(\"devtools\")\nlibrary(roxygen2)\n\ndevtools::document()\nsetwd(\"./My_project/NCCA\")\ninstall(\"NCCA\")\n\ninstall_github('NCCA','ilariabonavita/NCCA')\n\nsetwd('..')\n\nlibrary(NCCA)\n\nhelp('ncca.rsvd')\n",
+    "created" : 1530111631061.000,
+    "dirty" : true,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "3817190902",
+    "id" : "E444A3D8",
+    "lastKnownWriteTime" : 4326187456,
+    "last_content_update" : 1530181973163,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
